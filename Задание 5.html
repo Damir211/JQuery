@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 5.</title>
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	
+	1 (Заблокированный)<input type="checkbox" disabled>
+	2<input type="checkbox">
+	3<input type="checkbox">
+	4<input type="checkbox">
+	5 (Заблокированный)<input type="checkbox" disabled>
+	6<input type="checkbox">
+	7<input type="checkbox">
+	8<input type="checkbox">
+
+	<script type="text/javascript">
+		$('[type="checkbox"]:not([disabled])').prop('checked',true);
+	</script>
+</body>
+</html>

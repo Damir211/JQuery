@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 14.</title>
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<p>Абзац1</p>
+	<p>Абзац2</p>
+	<p></p>
+	<p>Абзац4</p>
+	<p>Абзац5</p>
+	<p></p>
+	<p>Абзац7</p>
+
+	<script type="text/javascript">
+		$('p:empty').each(function(){
+			$(this).text($(this).prev().text());
+		});
+	</script>
+</body>
+</html>

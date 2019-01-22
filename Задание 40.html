@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>Задание 40.</title>
+ 	<script
+ 	src="https://code.jquery.com/jquery-3.3.1.js"
+ 	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+ 	crossorigin="anonymous"></script>
+ </head>
+ <body>
+
+ 	<div class="www"><p>Абзац</p></div>
+ 	<div class="www"><p>Абзац</p></div>
+ 	<span><p>Абзац</p></span>
+ 	<span><p>Абзац</p></span>
+ 	<span><p>Абзац</p></span>
+ 	<div class="www zzz"><p id="test">Абзац</p></div>
+ 	<span><p>Абзац</p></span>
+ 	<div><p>Абзац</p></div>
+
+
+ 	<script type="text/javascript">
+ 		var css = [];
+ 		$('#test').parents().each( function() {
+ 			var clas = $(this).attr('class');
+ 			if (clas) {
+ 				css = css.concat(clas.split(' '));
+ 			}
+ 		});
+ 	</script>
+ </body>
+ </html>

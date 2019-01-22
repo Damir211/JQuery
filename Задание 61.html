@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>Задание 61.</title>
+   <script
+   src="https://code.jquery.com/jquery-3.3.1.js"
+   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+   crossorigin="anonymous"></script>
+ </head>
+ <body>
+
+  <input type="text">
+  1<input type="checkbox" value="1">
+  2<input type="checkbox" value="2">
+  3<input type="checkbox" value="3">
+  4<input type="checkbox" value="4">
+  5<input type="checkbox" value="5">
+  6<input type="checkbox" value="6">
+  7<input type="checkbox" value="7">
+  8<input type="checkbox" value="8">
+
+  <script type="text/javascript">
+    $('input[type="text"]').on('keyup focusout',function(){
+      var val = $(this).val();
+      $(':checkbox').prop('checked',false);
+      $(':checkbox[value='+val+']').prop('checked',true);
+    });
+  </script>
+</body>
+</html>

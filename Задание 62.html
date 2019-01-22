@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>Задание 62.</title>
+   <script
+   src="https://code.jquery.com/jquery-3.3.1.js"
+   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+   crossorigin="anonymous"></script>
+ </head>
+ <body>
+
+  <select name="radio1" id="select1">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+
+  <input type="radio" name="forSel" value="1">
+  <input type="radio" name="forSel" value="2">
+  <input type="radio" name="forSel" value="3">
+  <input type="radio" name="forSel" value="4">
+  <input type="radio" name="forSel" value="5">
+
+  <script type="text/javascript">
+    $('#select1').on('change',function(){
+      $(':radio[value='+$(this).val()+']').prop('checked',true);
+    });
+  </script>
+</body>
+</html>

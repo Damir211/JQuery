@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>Задание 51.</title>
+   <script
+   src="https://code.jquery.com/jquery-3.3.1.js"
+   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+   crossorigin="anonymous"></script>
+ </head>
+ <body>
+
+   <div>1</div>
+   <div>2</div>
+   <div>3
+    <div class="www">3.1
+      <div>
+        <div id="test">test</div>
+      </div>
+    </div>
+  </div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  
+  <script type="text/javascript">
+    $('#test').parentsUntil('.www').parent().append('<p>!</p>');
+  </script>
+</body>
+</html>

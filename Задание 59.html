@@ -1,0 +1,26 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>Задание 59.</title>
+   <script
+   src="https://code.jquery.com/jquery-3.3.1.js"
+   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+   crossorigin="anonymous"></script>
+ </head>
+ <body>
+
+  <input type="text" value="input1">
+  <input type="text" value="input2">
+  <input type="text" value="input3">
+  <input type="text" value="input4">
+  <input type="text" value="input5">
+
+  <script type="text/javascript">
+    $('input').each(function(){
+      $(this).attr('placeholder',$(this).val());
+      $(this).removeAttr('value');
+    });
+  </script>
+</body>
+</html>

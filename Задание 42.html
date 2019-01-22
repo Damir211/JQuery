@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>Задание 42.</title>
+ 	<script
+ 	src="https://code.jquery.com/jquery-3.3.1.js"
+ 	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+ 	crossorigin="anonymous"></script>
+ </head>
+ <body>
+
+ 	<div id="test">
+ 		<p>1</p>
+ 		<p class="www">2</p>
+ 		<p>3</p>
+ 		<p>4</p>
+ 		<p>5</p>
+ 		<p class="www">6</p>
+ 		<p>7</p>
+ 		<p class="www">8</p>
+ 	</div>
+ 	<p>ggg</p>
+ 	<script type="text/javascript">
+ 		$('#test p').append('!').not('.www').css('color','red');
+ 		
+ 	</script>
+ </body>
+ </html>

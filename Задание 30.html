@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 30.</title>
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<h1>Заголовок</h1>
+	<p class="www">15</p>
+	<h1>Заголовок</h1>
+	<p>10</p>
+	<p class="www">13</p>
+	<h1>Заголовок</h1>
+	<p class="www">5</p>
+	<p>4</p>
+	<div>Текст</div>
+	<p class="www">8</p>
+	<h1>Заголовок</h1>
+	<p class="www">5</p>
+	<p>4</p>
+	<div>Текст</div>
+	<p class="www">8</p>
+	<h1>Заголовок</h1>
+
+
+	<script type="text/javascript">
+		$('p').on('click', function() {
+			$(this).nextAll().eq(4).not(':header').remove();
+		});
+	</script>
+</body>
+</html>

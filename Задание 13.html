@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 13.</title>
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<h2>Заголовок</h2>
+	<p>Абзац1</p>
+	<p>Абзац2</p>
+	<p>Абзац3</p>
+	<p>Абзац4</p>
+	<h2>Заголовок</h2>
+	<p>Абзац5</p>
+	<p>Абзац6</p>
+	<p>Абзац7</p>
+
+	<script type="text/javascript">
+		$('h2 + p').each(function(){
+			$(this).insertBefore($(this).prev());
+		});
+	</script>
+</body>
+</html>
